@@ -1,3 +1,25 @@
+#Overview:
+The goal of this project is to design, build, and implement a website landing page for Acme, a fictional SaaS company. The landing page will promote Acme Note, a newly launched web-based application for taking notes. The primary objective of the landing page is to attract visitors and encourage them to sign up for Acme Note
+
+#Framework used
+React (v18.2.0):
+A JavaScript library for building user interfaces.
+
+#packages used
+React DOM (v18.2.0):
+Provides DOM-specific methods for React.
+
+React Router DOM (v6.22.0):
+A declarative routing library for React applications.
+
+Bootstrap (v5.3.2):
+A popular CSS framework for building responsive and visually appealing web pages.
+
+React Toastify (v10.0.4):
+A notification library for React applications, used for displaying toasts.
+
+Nodemon (v3.0.3):
+A utility that monitors for changes in your server and automatically restarts it.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
