@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.tbg{
+  background-color: #ffffff;
+}
+/* NotesList.css */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  background-color: aliceblue;
+}
+
+/* NoteModal.css */
+/* Add your custom styles for the modal here */
+
+
+/* .bgimage{
+  background-image: url("https://djnw5a0wszky0.cloudfront.net/inkfactorywp/wp-content/uploads/2016/12/Blog_7-Digital-Tools_Header-Image_1920x1080-1900x1069.jpg");
+  background-size: cover;
+  height: 1000px;
+} */
+
+/* Apply different background image for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .bgimage {
+    background-image: url('https://cdn.dribbble.com/users/2492450/screenshots/11875872/artboard_copy_8_4x.jpg');
+    background-size: cover;
+  height: 100%;
+  
+  }
+  .landing{
+    margin-top: 67px;
+  }
+
+  .h1weight{
+    font-weight: 500 !important;
+    font-size:30px !important;
+  }
+  .pweight{
+    font-size: medium !important;
+    font-weight: 300 !important;
+  }
+}
+
+/* Apply different background image for screens with a minimum width of 769px and a maximum width of 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+ 
+  .landing {
+    margin-top: 70px;
+    background-image: url("https://site-cdn.onenote.net/161741240450_Images/home/new/Collab_8x3_v2.jpg") !important;
+    /* background-size: cover; */
+    width: 100px; /* Replace 100px with your desired width */
+    height: 100%; 
+     }
+  
+}
+.landing{
+  background-image: url("https://site-cdn.onenote.net/161741240450_Images/home/new/Collab_8x3_v2.jpg") !important;
+  background-size: cover;
+  width: 100px; /* Replace 100px with your desired width */
+  height: 400px; 
+  /* box-shadow: inset 0 0 10px rgba(231, 35, 35, 0.5) !important; */
+  background-color: rgba(0, 0, 0, 1); 
+}
+
+
+/*   screens with a minimum width of 1201px */
+@media (min-width: 1201px) {
+  .bgimage {
+    background-image: url('https://www.yorku.ca/scld/wp-content/uploads/sites/36/2020/08/pexels-ketut-subiyanto-4126743-1024x682.jpg');
+    background-size: cover;
+  height: 500px;
+  margin-top: 60px;
+  }
+  .landing{
+    margin-top: 74px;
+  }
+}
+
+.footer {
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.tbg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
 }

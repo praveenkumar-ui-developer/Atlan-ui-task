@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Navbar from './Components/Navbar';
+import LandingPage from './Components/LandingPage';
+import { Route, Router, Routes } from 'react-router-dom';
+import WhyAcme from './Components/WhyAcme';
+import Login from './Components/Login';
+import Pricing from './Components/Pricing';
+import Footer from './Components/Footer';
 
-function App() {
+
+const App = () => {
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tbg ">
+      <Navbar/>
+      <div className=' '>
+      <div>
+      
+        {/* <LandingPage/> */}
+        <Routes>
+          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/whyAcme' element={<WhyAcme/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/pricing' element={<Pricing/>}/>
+        </Routes>
+        <Footer className='footer'/>
+      </div>
+      </div>
+    
     </div>
   );
-}
+};
 
 export default App;
