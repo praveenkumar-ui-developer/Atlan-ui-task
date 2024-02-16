@@ -6,6 +6,7 @@ React (v18.2.0):
 A JavaScript library for building user interfaces.
 
 #packages used
+
 React DOM (v18.2.0):
 Provides DOM-specific methods for React.
 
